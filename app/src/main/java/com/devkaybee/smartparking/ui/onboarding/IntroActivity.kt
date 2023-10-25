@@ -1,0 +1,29 @@
+package com.devkaybee.smartparking.ui.onboarding
+
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.devkaybee.smartparking.R
+import com.devkaybee.smartparking.databinding.ActivityIntroBinding
+import com.devkaybee.smartparking.databinding.ActivityMainBinding
+import com.devkaybee.smartparking.ui.admin.authentication.AdminLoginActivity
+import com.devkaybee.smartparking.ui.diver.authentication.DriverLoginActivity
+
+class IntroActivity : AppCompatActivity() {
+    private lateinit var introBinding: ActivityIntroBinding
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        introBinding = ActivityIntroBinding.inflate(layoutInflater)
+        setContentView(introBinding.root)
+
+        introBinding.adminLoginBtn.setOnClickListener {
+            val intent = Intent(this, AdminLoginActivity::class.java)
+            startActivity(intent)
+        }
+
+        introBinding.driverLoginBtn.setOnClickListener {
+            val intent = Intent(this, DriverLoginActivity::class.java)
+            startActivity(intent)
+        }
+    }
+}
