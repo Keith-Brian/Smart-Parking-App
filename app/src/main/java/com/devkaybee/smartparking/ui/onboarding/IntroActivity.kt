@@ -7,6 +7,8 @@ import com.devkaybee.smartparking.R
 import com.devkaybee.smartparking.databinding.ActivityIntroBinding
 import com.devkaybee.smartparking.databinding.ActivityMainBinding
 import com.devkaybee.smartparking.ui.admin.authentication.AdminLoginActivity
+import com.devkaybee.smartparking.ui.admin.dashboard.AdminDashboardActivity
+import com.devkaybee.smartparking.ui.admin.dashboard.TestActivity
 import com.devkaybee.smartparking.ui.diver.authentication.DriverLoginActivity
 
 class IntroActivity : AppCompatActivity() {
@@ -17,12 +19,12 @@ class IntroActivity : AppCompatActivity() {
         setContentView(introBinding.root)
 
         introBinding.adminLoginBtn.setOnClickListener {
-            val intent = Intent(this, AdminLoginActivity::class.java)
+            val intent = Intent(this, AdminDashboardActivity::class.java)
             startActivity(intent)
         }
 
         introBinding.driverLoginBtn.setOnClickListener {
-            val intent = Intent(this, DriverLoginActivity::class.java)
+            val intent = Intent(this, TestActivity::class.java)
             startActivity(intent)
         }
     }

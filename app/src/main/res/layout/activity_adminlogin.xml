@@ -26,7 +26,7 @@
         android:text="Welcome  Back"
         android:textStyle="bold"
         android:fontFamily="@font/ubuntu_bold"
-        android:textColor="@color/black"
+        android:textColor="@color/gradientBlue"
         android:textSize="24sp"/>
 
     <TextView
@@ -35,10 +35,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/txtWelcome"
         android:layout_marginStart="10dp"
-        android:layout_centerHorizontal="true"
-        android:text="Admin Login Page"
+        android:layout_marginTop="10dp"
+        android:text="ADMIN LOGIN"
         android:textStyle="bold"
-        android:fontFamily="@font/ubuntu_italic"
+        android:fontFamily="@font/ubuntu_regular"
         android:textColor="@color/black"
         android:textSize="20sp"/>
 
@@ -104,8 +104,8 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/ubuntu_bold_italic"
-        android:textColor="@color/black"
-        android:text="Forgot Password?"
+        android:textColor="@color/gradientBlue"
+        android:text="@string/forgot_password"
         />
 
     <com.google.android.material.button.MaterialButton

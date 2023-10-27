@@ -43,6 +43,7 @@ android {
 dependencies {
 
     implementation("com.google.firebase:firebase-auth:22.2.0")
+    implementation("com.google.firebase:firebase-database:20.3.0")
     // Added dependencies components
     val lifecycleVersion  = "2.6.1"
     val navVersion = "2.5.3"
@@ -70,6 +71,10 @@ dependencies {
     //Navigation-component
     implementation ("androidx.navigation:navigation-fragment-ktx:$navVersion")
     implementation ("androidx.navigation:navigation-ui-ktx:$navVersion")
+
+    // RecyclerView Component
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
 
 
     implementation("androidx.core:core-ktx:1.9.0")
