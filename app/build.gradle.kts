@@ -65,6 +65,8 @@ dependencies {
     implementation ("com.airbnb.android:lottie:6.0.0")
     //circular-image-view
     implementation ("de.hdodenhof:circleimageview:3.1.0")
+
+    implementation ("com.squareup.okhttp3:logging-interceptor:4.2.1")
     //swipeRefresh-layout
     implementation ("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
 
@@ -75,6 +77,10 @@ dependencies {
     // RecyclerView Component
     implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
+
+    //Paho MQTT
+    implementation ("org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.4")
+    implementation ("org.eclipse.paho:org.eclipse.paho.android.service:1.1.1")
 
 
     implementation("androidx.core:core-ktx:1.9.0")

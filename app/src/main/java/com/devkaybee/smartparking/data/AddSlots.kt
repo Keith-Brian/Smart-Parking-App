@@ -1,7 +1,7 @@
 package com.devkaybee.smartparking.data
 
 data class AddSlots(
-    var parkName: String,
-    var location: String,
-    var maxCapacity: String
+    var parkName: String?=null,
+    var location: String?=null,
+    var maxCapacity: String?=null
 )

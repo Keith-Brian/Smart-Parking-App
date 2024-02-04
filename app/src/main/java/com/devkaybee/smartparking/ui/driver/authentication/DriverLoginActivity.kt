@@ -1,9 +1,8 @@
-package com.devkaybee.smartparking.ui.diver.authentication
+package com.devkaybee.smartparking.ui.driver.authentication
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.devkaybee.smartparking.R
 import com.devkaybee.smartparking.databinding.ActivityDriverLoginBinding
 import com.devkaybee.smartparking.ui.onboarding.IntroActivity
 

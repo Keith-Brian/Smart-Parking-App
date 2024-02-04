@@ -38,7 +38,7 @@
             android:src="@drawable/location"/>
 
         <TextView
-            android:id="@+id/tvParkedVehicleNumbers"
+            android:id="@+id/tvParkLocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/tvTitle"
@@ -52,7 +52,7 @@
             android:textColor="@color/gradientBlue" />
 
         <TextView
-            android:id="@+id/tvParkLocation"
+            android:id="@+id/tvParkedVehicleNumbers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="6"

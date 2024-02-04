@@ -34,12 +34,22 @@ class StatusFragment : Fragment(R.layout.fragment_status) {
             statusBinding.addSlotsFab.visibility = View.GONE
             statusBinding.txtAdd.visibility = View.GONE
 
+            statusBinding.layoutParkedStatus.visibility = View.GONE
+            statusBinding.parkedVehicleStatus.visibility = View.GONE
+
         }
 
         statusBinding.addSlotsBtn.setOnClickListener {
             addSlots()
         }
-        statusBinding.cancelBtn.setOnClickListener {  }
+        statusBinding.cancelBtn.setOnClickListener {
+            statusBinding.addSlotsLayout.visibility = View.GONE
+            statusBinding.addSlotsFab.visibility = View.GONE
+            statusBinding.txtAdd.visibility = View.GONE
+
+            statusBinding.layoutParkedStatus.visibility = View.VISIBLE
+            statusBinding.parkedVehicleStatus.visibility = View.VISIBLE
+        }
 
     }
 
@@ -53,9 +63,13 @@ class StatusFragment : Fragment(R.layout.fragment_status) {
         slotsDatabase.child(parkSlot).setValue(slots).addOnSuccessListener {
 
             Toast.makeText(requireContext(), "Slot Added Successfully", Toast.LENGTH_SHORT).show()
-            statusBinding.addSlotsLayout.visibility = View.VISIBLE
+            statusBinding.addSlotsLayout.visibility = View.GONE
             statusBinding.addSlotsFab.visibility = View.GONE
             statusBinding.txtAdd.visibility = View.GONE
+            statusBinding.fabMain.visibility = View.VISIBLE
+
+            statusBinding.layoutParkedStatus.visibility = View.VISIBLE
+            statusBinding.parkedVehicleStatus.visibility = View.VISIBLE
         }
     }
 }

@@ -16,17 +16,17 @@ class ControlFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         controlBinding = FragmentControlBinding.bind(view)
 
-        var parkSlots = mutableListOf(
-            ParkingSlots("GPO", "Nairobi, CBD", "6"),
-            ParkingSlots("Garden City Mall", "Thika Road", "8"),
-            ParkingSlots("China Square", "Thika Road", "10"),
-            ParkingSlots("Apple Cross Road", "Lavington", "8")
-        )
-
-
-        val itemAdapter = ParkListAdapter(parkSlots)
-        controlBinding.rcvParkingSlots.layoutManager = LinearLayoutManager(requireContext())
-        controlBinding.rcvParkingSlots.adapter = itemAdapter
+//        var parkSlots = mutableListOf(
+//            ParkingSlots("GPO", "Nairobi, CBD", "6"),
+//            ParkingSlots("Garden City Mall", "Thika Road", "8"),
+//            ParkingSlots("China Square", "Thika Road", "10"),
+//            ParkingSlots("Apple Cross Road", "Lavington", "8")
+//        )
+//
+//
+//        val itemAdapter = ParkListAdapter(parkSlots)
+//        controlBinding.rcvParkingSlots.layoutManager = LinearLayoutManager(requireContext())
+//        controlBinding.rcvParkingSlots.adapter = itemAdapter
 
     }
 

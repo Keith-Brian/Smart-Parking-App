@@ -22,8 +22,8 @@
         android:layout_below="@id/parkLogo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="SMART-PARKING"
-        android:textSize="20sp"
+        android:text="HUDUMA-PARK"
+        android:textSize="30sp"
         android:textColor="@color/black"
         android:fontFamily="@font/ubuntu_bold"/>
     
@@ -39,9 +39,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Welcome"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:fontFamily="@font/ubuntu_bold"
-            android:textSize="20sp"/>
+            android:textSize="24sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -62,9 +62,9 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/driverLoginBtn"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="10dp"
                 android:backgroundTint="@color/black"
                 android:textSize="12sp"
                 android:fontFamily="@font/ubuntu_bold"
@@ -72,9 +72,9 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/adminLoginBtn"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
                 android:backgroundTint="@color/white"
                 android:textColor="@color/black"
                 android:fontFamily="@font/ubuntu_bold"

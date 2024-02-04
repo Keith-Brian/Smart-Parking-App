@@ -1,4 +1,9 @@
 buildscript {
+    repositories {
+        maven {
+            url  = uri("https://repo.eclipse.org/content/repositories/paho-snapshots/")
+        }
+    }
     dependencies {
         classpath("com.google.gms:google-services:4.4.0")
     }

@@ -70,10 +70,17 @@
 
     </RelativeLayout>
 
+    <com.google.android.material.search.SearchBar
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_below="@id/topNavBar"
+        android:hint="Park Here ..."
+        android:layout_height="wrap_content" />
+
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_below="@id/topNavBar"
+        android:layout_below="@id/searchView"
         android:layout_marginTop="10dp"
         android:id="@+id/rcvParkingSlots"
         android:layout_width="match_parent"

@@ -69,6 +69,7 @@
             android:autofillHints="emailAddress"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:fontFamily="@font/ubuntu_regular"
             android:hint="@string/username"/>
 
 
@@ -91,6 +92,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/password"
+            android:fontFamily="@font/ubuntu_regular"
             android:autofillHints="password" />
 
     </com.google.android.material.textfield.TextInputLayout>
